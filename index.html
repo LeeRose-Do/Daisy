@@ -1,0 +1,125 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <title>❤</title>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+            background-image: url('https://raw.githubusercontent.com/we11cheng/we11cheng.github.io/master/bg.jpg');
+            font-size: 85%;
+            margin: 0;
+        }
+        
+        h2 {
+            font-size: 220%;
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        
+        .timer {
+            font-size: 180%;
+            line-height: 1.5;
+            margin: 1em 0;
+            text-align: center;
+        }
+        
+        .timer b {
+            color: rgb(253, 99, 125);
+            text-align: center;
+        }
+        .end{
+            height: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+        <h2>蠢猪和臭驴在一起已经</h2>
+        <div class="timer">
+            <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
+        </div>
+    <script>
+        function timer() {
+          var date1= '2019/12/25 10:00:00';  //开始时间
+          var date2 = new Date(); //结束时间
+          var t = date2.getTime() - new Date(date1).getTime();
+          var h = ~~(t / 1000 / 60 / 60 % 24);
+          if (h < 10) {
+            h = "0" + h;
+          }
+          var m = ~~(t / 1000 / 60 % 60);
+          if (m < 10) {
+            m = "0" + m;
+          }
+          var s = ~~(t / 1000 % 60);
+          if (s < 10) {
+            s = "0" + s;
+          }
+          document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
+          document.getElementById('h').innerHTML = h;
+          document.getElementById('m').innerHTML = m;
+          document.getElementById('s').innerHTML = s;
+        }
+        timer();
+        setInterval(timer, 1000);
+    </script>
+    
+    <main>
+            <div class="content">
+                <img class="content__img" src="img/1.jpg" alt="Some image1" />
+                <img class="content__img" src="img/2.jpg" alt="Some image2" />
+                <img class="content__img" src="img/3.jpg" alt="Some image3" />
+                <img class="content__img" src="img/4.jpg" alt="Some image4" />
+                <img class="content__img" src="img/5.jpg" alt="Some image5" />
+                <img class="content__img" src="img/6.jpg" alt="Some image6" />
+                <img class="content__img" src="img/7.jpg" alt="Some image7" />
+                <img class="content__img" src="img/8.jpg" alt="Some image8" />
+                <img class="content__img" src="img/9.jpg" alt="Some image9" />
+                <img class="content__img" src="img/10.jpg" alt="Some image10" />
+                <img class="content__img" src="img/11.jpg" alt="Some image11" />
+                <img class="content__img" src="img/12.jpg" alt="Some image12" />
+                <img class="content__img" src="img/13.jpg" alt="Some image13" />
+                <img class="content__img" src="img/14.jpg" alt="Some image14" />
+                <img class="content__img" src="img/15.jpg" alt="Some image15" />
+                <img class="content__img" src="img/16.jpg" alt="Some image16" />
+                <img class="content__img" src="img/17.jpg" alt="Some image17" />
+                <img class="content__img" src="img/18.jpg" alt="Some image18" />
+                <img class="content__img" src="img/19.jpg" alt="Some image19" />
+                <img class="content__img" src="img/20.jpg" alt="Some image20" />
+                <img class="content__img" src="img/21.jpg" alt="Some image21" />
+                <img class="content__img" src="img/22.jpg" alt="Some image22" />
+                <img class="content__img" src="img/23.jpg" alt="Some image23" />
+                <img class="content__img" src="img/24.jpg" alt="Some image24" />
+                <img class="content__img" src="img/25.jpg" alt="Some image25" />
+                <img class="content__img" src="img/26.jpg" alt="Some image26" />
+                <img class="content__img" src="img/27.jpg" alt="Some image27" />
+                <img class="content__img" src="img/28.jpg" alt="Some image28" />
+                <img class="content__img" src="img/29.jpg" alt="Some image29" />
+                <img class="content__img" src="img/30.jpg" alt="Some image30" />
+                <img class="content__img" src="img/31.jpg" alt="Some image31" />
+                <img class="content__img" src="img/32.jpg" alt="Some image32" />
+                <img class="content__img" src="img/33.jpg" alt="Some image33" />
+                <img class="content__img" src="img/34.jpg" alt="Some image34" />
+                <img class="content__img" src="img/35.jpg" alt="Some image35" />
+                <img class="content__img" src="img/36.jpg" alt="Some image36" />
+                <img class="content__img" src="img/37.jpg" alt="Some image37" />
+                <h3 class="content__title">Daisy</h3>
+            </div><!--/content-->
+        </main>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/demo.js"></script></body>
+</body>
+
+</html>
